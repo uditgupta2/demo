@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms And Input</title>
+</head>
+<body>
+  <form action="process.php">
+
+    <!-- text type input -->
+    <div>
+      <label for="name">Name</label><br>
+      <input type="text" id="name" name="name" value="udit">
+      <!-- value mtlb ki vha pahle se udit bhra rhega cghange kr skte hai -->
+    </div>
+    
+    <!-- email type input -->
+    <div>
+      <label for="email">Email</label><br>
+      <input type="email" id="email" name="email" placeholder="write your email">
+    </div>
+
+    <!-- select type -->
+    <div>
+      <label for="sex">Sex</label><br>
+      <select name="sex" id="">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+
+    <!-- date type input -->
+    <div>
+      <label for="birthdate">Birthdate</label><br>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+
+    <!-- number type input -->
+    <div>
+      <label for="age">Age</label><br>
+      <input type="number" id="age" name="age">
+    </div>
+
+  <!-- radio bottons, to select any one of the options -->
+  <!-- radio type input -->
+  <div>
+    <label for="membership">Membership</label><br>
+    <input type="radio" id="membership" value="simple" name="membership">simple
+    <input type="radio" id="membership" value="standard" name="membership" checked>standard
+    <input type="radio" id="membership" value="prime" name="membership">prime
+
+  </div>
+   
+  <!-- checkbox type input -->
+  <div>
+    <label for="hobbies">hobbies</label><br>
+    <input type="checkbox" id="hobbies" value="cricket" name="hobbies" >cricket
+    <input type="checkbox" id="hobbies" value="creading" name="hobbies" checked >reading
+    <input type="checkbox" id="hobbies" value="writing" name="hobbies" >writing
+
+  </div>
+
+
+  <!-- submitt -->
+    <input type="submit" name="submit" id="submit">
+    <!-- OR using botton -->
+    <!-- <button type="submit">Submit</button> -->
+    <button type="reset">Reset</button>
+   
+  
+
+
+  <!-- in the action element send the data collected from the form to the 
+  speified program or database to process it, so let it be process.php -->
+  </form>
+
+</body>
+</html>
